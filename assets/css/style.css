@@ -22,6 +22,7 @@ body {
         justify-items: center;
         justify-content: center;
         text-align: center;
+        flex: 1 1 25px;
         
     }
     .section{
