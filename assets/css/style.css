@@ -78,41 +78,26 @@ header {
    display: flex;
    justify-content: center;
 }
-.Profile-section{
-    display: flex;
-    flex-direction: row;
-    background-color: yellow;
-    padding: 2rem;
-    max-width: 100vh;
-    max-height: 60vh;
-   
-   
-}
-.Profile-section img{
+
+.hero-image img{
     height: 300px;
     width: 300px;
     border-radius: 100%;
+    position: relative;right: 45%;
     z-index: 1;
-    position: relative; left: 50px;
 }
-.Profile-section div {
-   
-    
-}
-.Profile-section div h3{
-    margin: 1rem;
-    box-shadow: 2px 4px 8px black;
-    padding: 4rem;
+.Profile-section{
+    position: absolute; top: 60%;
+    display: flex;
+    background-color: yellow;
     border-radius: 0.5rem;
-    max-height: 20vh;
-    max-width: 60vh;
-    position: relative;
-
-    
+    border-style: double;
 }
-
+.name span{
+    position: relative; right: 20%;
+}
 .who-weare{
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding: 2rem;
 }
 .who-weare h2{
