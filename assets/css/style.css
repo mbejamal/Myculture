@@ -79,41 +79,40 @@ header {
    justify-content: center;
 }
 .Profile-section{
-    position: absolute; left: 350px; top: 300px;
-    padding: 1rem  10rem;
-    height: 300px;
-    width: 45rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: yellow;
+    padding: 2rem;
+    max-width: 100vh;
+    max-height: 60vh;
+   
    
 }
 .Profile-section img{
     height: 300px;
     width: 300px;
     border-radius: 100%;
-    position: relative;bottom: 70px; right: 350px;
     z-index: 1;
+    position: relative; left: 50px;
 }
 .Profile-section div {
-    box-shadow: 2px 4px 8px black;
-    position: absolute; top: 50px; left: 250px;
-    background-color: white;
-    width: 35rem;
-    height: 200px;
-    border-radius: 0.5rem;
    
     
 }
-.Profile-section div p{
-    padding-left: 6rem;
+.Profile-section div h3{
     margin: 1rem;
+    box-shadow: 2px 4px 8px black;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    max-height: 20vh;
+    max-width: 60vh;
+    position: relative;
 
     
 }
 
 .who-weare{
-    margin-top: 15rem;
+    margin-top: 2rem;
     padding: 2rem;
 }
 .who-weare h2{
