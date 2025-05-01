@@ -62,12 +62,6 @@ header {
 .menu-item:hover{
     background-color: white;
 }
-.section1{
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-
 .hero-image{
     background: url(../images/bg.jpg);
     background-size: cover;
@@ -89,9 +83,15 @@ header {
 .Profile-section{
     position: absolute; top: 60%;
     display: flex;
-    background-color: yellow;
+    background-color:#b4bac8;
     border-radius: 0.5rem;
     border-style: double;
+   flex-shrink:inherit
+}
+.Profile-section img{
+    display: flex;
+    flex-shrink: inherit;
+
 }
 .name span{
     position: relative; right: 20%;
@@ -120,7 +120,6 @@ header {
     padding: 4rem;
     justify-items: center;
 }
-
 .card img{
     height: 50px;
     width: 50px;
@@ -147,6 +146,10 @@ a button{
     .Profile-section{
         height: 20rem;
         align-items: center;
+        flex-direction: inherit;
+    }
+    .Profile-section img{
+        flex-direction: inherit;
     }
   }
   
