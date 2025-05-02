@@ -147,9 +147,9 @@ header {
 
 a button{
     padding: 10px;
-    background-color: goldenrod;
+    background-color: gold;
     border-radius: 0.5rem;
-    color: white;
+    color:#002060;
     font-weight: bold;
 }
 
