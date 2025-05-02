@@ -63,14 +63,14 @@ header {
     background-color: white;
 }
 .hero-image{
-    background: url(../images/bg.jpg);
+    background-image: url(../images/bg.jpg);
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 400px;
     position: relative;
     padding-top: 10rem;
-   display: flex;
-   justify-content: center;
+  
+  
 }
 
 .hero-image img{
