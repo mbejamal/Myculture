@@ -74,28 +74,23 @@ header {
 }
 
 .hero-image img{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 100%;
     position: relative;right: 45%;
     z-index: 1;
 }
 .Profile-section{
-    position: absolute; top: 60%;
+    position: absolute; top: 70%; left: 40%;
     display: flex;
     background-color:#b4bac8;
     border-radius: 0.5rem;
-    border-style: double;
-   flex-shrink:inherit
+    height: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
-.Profile-section img{
-    display: flex;
-    flex-shrink: inherit;
 
-}
-.name span{
-    position: relative; right: 20%;
-}
 .who-weare{
     margin-top: 6rem;
     padding: 2rem;
@@ -146,7 +141,7 @@ a button{
     .Profile-section{
         height: 20rem;
         align-items: center;
-        flex-direction: inherit;
+        flex-direction:row;
     }
     .Profile-section img{
         flex-direction: inherit;
