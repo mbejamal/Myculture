@@ -33,6 +33,11 @@ body {
         justify-content: center;
         flex-wrap: wrap;
     }
+    img{
+        height: 450px;
+        max-width: 100%;
+        border-radius: 0.5rem;
+    }
 }
 
 header {
@@ -147,11 +152,32 @@ a button{
     font-weight: bold;
 }
 
+/* past projects */
+.Our-gallery{
+    display: grid;
+    max-width: 100%;
+    height: 450px;
+}
+.gallery-content{
+    display: grid;
+    box-shadow: 1px 2px 8px black;
+    margin: 2rem;
+}
+.pics{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
  /* Responsive adjustments */
  @media (max-width: 768px) {
     .card {
       flex-direction: column;
       align-items: center;
+    }
+    .pics{
+        flex-direction: column;
+        align-items: center;
     }
    
   }
