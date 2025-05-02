@@ -1,0 +1,602 @@
+/* Responsive styles for Northern Ghana Cultural Dance Website */
+
+/* Base responsive styles */
+:root {
+  --primary-color: #002060;
+  --secondary-color: #004080;
+  --accent-color: gold;
+  --accent-dark: #e6b800;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #fff;
+  --black: #000;
+  --gray-light: #f9f9f9;
+  --gray-medium: #e0e0e0;
+  --section-padding: 2rem;
+  --card-border-radius: 0.5rem;
+}
+
+/* Mobile navigation styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 200;
+  position: relative;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+/* Large Desktop Enhancements (1400px+) */
+@media (min-width: 1400px) {
+  .hero-image {
+    height: 700px;
+  }
+  
+  .hero-image h2 {
+    font-size: 3rem;
+    max-width: 800px;
+  }
+  
+  .container {
+    max-width: 1300px;
+  }
+  
+  .profile-pic img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Desktop/Laptop styles */
+@media (max-width: 1200px) {
+  .hero-image h2 {
+    font-size: 2.2rem;
+    max-width: 600px;
+  }
+  
+  .section {
+    padding: 1.5rem;
+  }
+  
+  .profile-pic {
+    bottom: -80px;
+  }
+  
+  .who-weare {
+    margin-top: 7rem;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 992px) {
+  .section {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 2rem;
+  }
+  
+  .name-content {
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    right: 0;
+  }
+  
+  .profile-pic {
+    flex-direction: column;
+    align-items: center;
+    bottom: -120px;
+  }
+  
+  .profile-pic img {
+    max-width: 150px;
+    height: 150px;
+  }
+  
+  .name-content p {
+    padding-left: 0;
+  }
+  
+  .hero-image {
+    height: 500px;
+    background-attachment: scroll;
+  }
+  
+  .hero-image h2 {
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+  
+  /* Footer adjustments */
+  footer .flex > div {
+    flex: 0 0 45%;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Spacing adjustments */
+  .section-header {
+    margin: 3rem 0 1.5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 3rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 3rem;
+  }
+  
+  /* Font size adjustments */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Booking form tablet adjustments */
+  .booking-image {
+    height: 350px;
+  }
+  
+  .booking-form-container {
+    padding: 2rem 2rem;
+  }
+  
+  .booking-form {
+    padding: 1.5rem;
+  }
+  
+  .contact-methods {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  /* Header and navigation for mobile */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding-top: 1rem;
+    gap: 0;
+  }
+  
+  .menu.active {
+    display: flex;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  .menu-item {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    border-radius: 0;
+    margin: 2px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  .menu-item:after {
+    display: none;
+  }
+  
+  /* Section layout fixes */
+  .section {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+  
+  .card {
+    flex: 1 1 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Hero section */
+  .hero-image {
+    height: 350px;
+    padding-top: 60px;
+  }
+  
+  .hero-image h2 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    max-width: 90%;
+  }
+  
+  .profile-pic {
+    bottom: -100px;
+  }
+  
+  .profile-pic img {
+    max-width: 120px;
+    height: 120px;
+  }
+  
+  .name-content {
+    width: 90%;
+    padding: 1rem;
+    margin-top: -30px;
+  }
+  
+  .name-content h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* Who we are section */
+  .who-weare {
+    margin-top: 7rem;
+    padding: 1.5rem;
+  }
+  
+  .who-weare h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Gallery fixes */
+  .pics {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .pics span {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .Our-gallery {
+    height: auto;
+  }
+  
+  .gallery-content {
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Call to action section */
+  .calltoaction {
+    padding: 2rem 1rem;
+  }
+  
+  .calltoaction h2 {
+    font-size: 1.5rem;
+  }
+  
+  .calltoaction button, .calltoaction .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    padding: 2rem 1rem;
+  }
+  
+  footer .flex > div {
+    flex: 0 0 100%;
+    padding: 1rem;
+  }
+  
+  /* Utility class adjustments */
+  .p-3 {
+    padding: 1.5rem;
+  }
+  
+  .py-3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Booking form mobile adjustments */
+  .booking-image {
+    height: 250px;
+  }
+  
+  .booking-form-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .booking-form {
+    padding: 1.25rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-method {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .profile-pic img {
+    max-width: 100px;
+    height: 100px;
+    border-width: 3px;
+  }
+  
+  .name-content {
+    width: 95%;
+    padding: 0.75rem;
+  }
+  
+  .name-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name-content p {
+    font-size: 0.8rem;
+  }
+  
+  .who-weare {
+    margin-top: 6rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-image {
+    height: 300px;
+  }
+  
+  .hero-image h2 {
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+  
+  .section-header h2:before, .section-header h2:after {
+    width: 20px;
+    height: 20px;
+  }
+  
+  img {
+    height: auto !important;
+    max-height: 300px;
+  }
+  
+  /* Button adjustments */
+  .btn, .calltoaction .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Animation adjustments for smoother performance */
+  .animate-on-scroll.visible {
+    transition-duration: 0.3s;
+  }
+  
+  /* Booking form small mobile adjustments */
+  .booking-image {
+    height: 200px;
+  }
+  
+  .booking-form-container {
+    padding: 1rem 0.75rem;
+  }
+  
+  .booking-form {
+    padding: 1rem;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+  }
+  
+  .contact-method {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+  
+  .contact-method i {
+    font-size: 1.5rem;
+  }
+  
+  .contact-method h3 {
+    font-size: 1rem;
+  }
+}
+
+/* For really small devices */
+@media (max-width: 350px) {
+  .logo h1 {
+    font-size: 1rem;
+  }
+  
+  .profile-pic {
+    bottom: -80px;
+  }
+  
+  .profile-pic img {
+    max-width: 90px;
+    height: 90px;
+  }
+  
+  .name-content h2 {
+    font-size: 1rem;
+  }
+  
+  .name-content p {
+    font-size: 0.75rem;
+  }
+  
+  .hero-image h2 {
+    font-size: 1.2rem;
+  }
+  
+  .who-weare {
+    margin-top: 5rem;
+  }
+  
+  footer h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Fix for mobile animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fix for mobile hover effects */
+@media (hover: none) {
+  .card:hover,
+  .pics span:hover,
+  .menu-item:hover,
+  .btn:hover {
+    transform: none;
+  }
+  
+  .card:hover img {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  header {
+    position: static;
+    box-shadow: none;
+  }
+  
+  .hero-image {
+    height: auto;
+    background: none;
+    color: var(--primary-color);
+    text-shadow: none;
+  }
+  
+  .hero-image h2 {
+    background: none;
+    color: var(--primary-color);
+  }
+  
+  .calltoaction button,
+  .calltoaction .btn,
+  .btn {
+    display: none;
+  }
+  
+  .card, .who-weare, .gallery-content {
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+  }
+  
+  footer {
+    background-color: transparent;
+    color: var(--text-color);
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  footer p,
+  footer a {
+    color: var(--text-color);
+  }
+  
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}

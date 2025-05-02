@@ -4,90 +4,468 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Northern Ghana Cultural Dance</title>
-    <link rel="stylesheet" href="../Myculture/assets/css/style.css">
+    <meta name="description" content="Experience authentic Northern Ghana cultural dances and performances. Book workshops, performances, and cultural events for schools, festivals, and special occasions.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
+    <!-- Modern Header -->
+    <header id="main-header">
+      <div class="logo">
+        <div class="logo-icon">
+            <i class="fas fa-drum"></i>
+        </div>
+        <h1>Northern Ghana Cultural Dance</h1>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="menu">
-        <a href="../Myculture/index.html"><div class="menu-item">Home</div></a>
-        <a href="../Myculture/previous.html"><div class="menu-item">Projects</div></a>
-        <a href="https://forms.gle/fmrYDQGtGBA4hLt19"><div class="menu-item">Book A Service Now</div></a>
+        <a href="index.html"><div class="menu-item">Home</div></a>
+        <a href="previous.html"><div class="menu-item">Gallery</div></a>
+        <a href="#booking-section"><div class="menu-item">Book A Service</div></a>
+        <a href="#contact-section" class="nav-button"><div>Contact Us</div></a>
       </div>
     </header>
 
-    <!--hero and profile pic-->
-
-   
-     <div class="hero-image">
-        <div class="profile-pic">
-            <img src="../Myculture/assets/images/prof1.jpg"/>
-            <div class="name-content">
-                <span><h2>Mr. Jamal-Deen Yakubu</h2></span>
-            <span> <p>I operate a self-managed Cultural Dance and Tour Business</p></span>
-
+    <!-- Hero Section -->
+    <div class="hero-image">
+        <div class="hero-content fade-in">
+            <h1>Experience the Rich Cultural Heritage of Northern Ghana</h1>
+            <p>Authentic traditional dances, performances, and cultural education</p>
+            <div class="hero-buttons">
+                <a href="#booking-section" class="btn btn-animated glow-effect">Book a Performance</a>
+                <a href="#services-section" class="btn btn-outline">Learn More</a>
             </div>
         </div>
     </div>
-    <div class="sec">
-        <div class="who-weare">
-            <h2>Who We Are</h2>
-        <p>We are a passionate cultural enterprise dedicated to preserving and promoting the rich heritage of Northern Ghana through traditional dance, drumming, and immersive cultural experiences. Founded and managed by Mr. Jamal-Deen Yakubu, our organization offers authentic dance instruction, cultural performances, and guided tours that connect visitors and locals alike to the deep-rooted traditions of our people.
 
-            To ensure our tourists' interests are fully met, we collaborate with reputable institutions and skilled cultural practitioners, combining expertise and local knowledge to deliver meaningful, engaging, and memorable experiences. We believe in the power of culture to inspire, educate, and unite communities. With every beat of the drum and every step of the dance, we celebrate identity, history, and the vibrant spirit of Northern Ghana.  
-        </p>
+    <!-- About Section -->
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <h2>About Our Cultural Dance Troupe</h2>
+            <p class="section-description">Preserving and sharing the vibrant cultural heritage of Northern Ghana through authentic dance performances, workshops, and cultural events.</p>
         </div>
-    
+
+        <div class="about-container">
+            <div class="about-image animate-on-scroll">
+                <img src="assets/images/dance.png" alt="Northern Ghana Dance Performance">
+                <div class="about-image-decoration"></div>
+            </div>
+
+            <div class="about-text animate-on-scroll delay-1">
+                <h3>Our Mission</h3>
+                <p>Our mission is to preserve, celebrate, and share the rich cultural heritage of Northern Ghana through authentic dance performances and educational programs. We are dedicated to keeping these traditions alive for future generations while creating meaningful cultural connections.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Authentic Traditions</h4>
+                            <p>Our performances showcase genuine Northern Ghanaian dance forms passed down through generations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Expert Performers</h4>
+                            <p>Our group consists of highly skilled dancers trained in traditional cultural expressions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Cultural Education</h4>
+                            <p>We provide educational workshops explaining the history and significance behind our dances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!--service section-->
-    <div class="section-header">
-        <h2>Our Services</h2>
+    <!-- Services Section -->
+    <div class="services-bg" id="services-section">
+        <div class="container">
+            <div class="section-header light-text animate-on-scroll">
+                <h2>Our Services</h2>
+                <p class="section-description">We offer a variety of cultural performances and educational programs tailored to your event's needs.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="assets/images/performance.png" alt="Cultural Performances Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cultural Performances</h3>
+                        <p>Authentic Northern Ghanaian dances for festivals, corporate events, weddings, and special occasions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Traditional costumes & instruments</li>
+                            <li><i class="fas fa-check-circle"></i> Customized programs</li>
+                            <li><i class="fas fa-check-circle"></i> Performances of varying durations</li>
+                        </ul>
+                        <a href="#booking-section" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll delay-1">
+                    <div class="service-icon">
+                        <img src="assets/images/dance.jpg" alt="Educational Workshops Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Educational Workshops</h3>
+                        <p>Interactive dance and cultural workshops for schools, universities, and community organizations.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Hands-on learning experiences</li>
+                            <li><i class="fas fa-check-circle"></i> Cultural context & history</li>
+                            <li><i class="fas fa-check-circle"></i> Suitable for all age groups</li>
+                        </ul>
+                        <a href="#booking-section" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="service-icon">
+                        <img src="assets/images/culturaltours.png" alt="Cultural Tours Icon">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cultural Tours</h3>
+                        <p>Guided experiences of Northern Ghana's rich cultural heritage, including dance, music, and traditions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Immersive cultural experiences</li>
+                            <li><i class="fas fa-check-circle"></i> Expert cultural guides</li>
+                            <li><i class="fas fa-check-circle"></i> Customizable itineraries</li>
+                        </ul>
+                        <a href="#booking-section" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
+    <!-- Team Section -->
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <h2>Meet Our Team</h2>
+            <p class="section-description">Our talented performers are dedicated to preserving and sharing Northern Ghana's cultural heritage.</p>
+        </div>
+
+        <div class="team-container">
+            <div class="team-member animate-on-scroll">
+                <div class="team-image">
+                    <img src="assets/images/prof1.jpg" alt="Jamal Deen - Founder & Lead Performer">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Jamal Deen</h3>
+                    <p>Founder & Lead Performer</p>
+                    <p class="team-bio">With over 15 years of experience, Jamal is passionate about preserving Northern Ghana's cultural heritage through dance.</p>
+                </div>
+            </div>
+
+            <div class="team-member animate-on-scroll delay-1">
+                <div class="team-image">
+                    <img src="assets/images/t2.jpg" alt="Amina Yakubu - Dance Coordinator">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Amina Yakubu</h3>
+                    <p>Dance Coordinator</p>
+                    <p class="team-bio">Amina specializes in traditional women's dances and leads our educational workshop programs.</p>
+                </div>
+            </div>
+
+            <div class="team-member animate-on-scroll delay-2">
+                <div class="team-image">
+                    <img src="assets/images/dan3.jpg" alt="Kwame Mensah - Cultural Educator">
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Kwame Mensah</h3>
+                    <p>Cultural Educator</p>
+                    <p class="team-bio">An expert in Northern Ghanaian history and traditions, Kwame brings depth and context to our performances.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <div class="booking-section" id="booking-section">
+        <div class="booking-decoration booking-circle1"></div>
+        <div class="booking-decoration booking-circle2"></div>
         
-        <div class="card">
-            <img src="../Myculture/assets/images/dance.png"/>
-            <div><h2>
-                Cultural Dance and drumming  Instruction
-            </h2></div>
-            <p>Experience the rhythms and heritage of Northern Ghana through expert-led traditional dance and drumming sessions.
-            </p>
-        </div>
-        <div class="card">
-            <img src="../Myculture/assets/images/performance.png"/>
-            <div><h2>
-                Event Organization & Performances
-            </h2></div>
-            <p>Bring your event to life with our vibrant cultural troupes, customized performances, and immersive displays.
+        <div class="container">
+            <div class="section-header light-text animate-on-scroll">
+                <h2>Book Our Services</h2>
+                <p class="section-description">Bring the rich cultural heritage of Northern Ghana to your event. Fill out the form below to inquire about our availability and rates.</p>
+            </div>
 
-            </p>
-        </div>
-        <div class="card">
-            <img src="../Myculture/assets/images/culturaltours.png"/>
-            <div><h2>
-                Cultural Tour Services
+            <div class="booking-container">
+                <div class="booking-info animate-on-scroll">
+                    <h3>Why Choose Us?</h3>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check-circle"></i> Authentic cultural experiences</li>
+                        <li><i class="fas fa-check-circle"></i> Professional and reliable service</li>
+                        <li><i class="fas fa-check-circle"></i> Customizable performances</li>
+                        <li><i class="fas fa-check-circle"></i> Educational component available</li>
+                        <li><i class="fas fa-check-circle"></i> Suitable for events of all sizes</li>
+                    </ul>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+233240080811</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>mjamaldeen91@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
 
-            </h2></div>
-            <p>Explore the rich history and cultural landmarks of Northern Ghana with our guided heritage tours.
-
-            </p>
+                <div class="booking-form animate-on-scroll delay-1">
+                    <form action="process_booking.php" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event_date">Event Date</label>
+                                <input type="date" id="event_date" name="event_date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service_type">Service Type</label>
+                            <select id="service_type" name="service_type" required>
+                                <option value="">Select a Service</option>
+                                <option value="performance">Cultural Performance</option>
+                                <option value="workshop">Educational Workshop</option>
+                                <option value="tour">Cultural Tour</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event_details">Event Details</label>
+                            <textarea id="event_details" name="event_details" rows="4" placeholder="Please provide details about your event, expected number of attendees, venue, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-animated glow-effect">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <div class="section">
-        <div class="calltoaction">
-            <h2>Book Us Now!</h2>
-           <a href="https://forms.gle/fmrYDQGtGBA4hLt19"> <button type="button">Booking</button></a>
-           <p>or</p>
-           <h3>Contact Us </h3>
-           <p>Phone Number :+233240080811</p>
-           <p>Email: mjamaldeen91@gmail.com</p>
+    <!-- Gallery Section -->
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <h2>Our Gallery</h2>
+            <p class="section-description">Glimpses of our performances and cultural events across Ghana and beyond.</p>
         </div>
-        <img src="../Myculture/assets/images/tour.jpg">
+
+        <div class="gallery-preview">
+            <div class="gallery-item animate-on-scroll">
+                <img src="assets/images/dance.jpg" alt="Cultural Dance Performance">
+                <div class="gallery-overlay">
+                    <a href="previous.html" class="gallery-link">View Gallery</a>
+                </div>
+            </div>
+            
+            <div class="gallery-item animate-on-scroll delay-1">
+                <img src="assets/images/td.jpg" alt="Workshop with Students">
+                <div class="gallery-overlay">
+                    <a href="previous.html" class="gallery-link">View Gallery</a>
+                </div>
+            </div>
+            
+            <div class="gallery-item animate-on-scroll delay-2">
+                <img src="assets/images/dan3.jpg" alt="Cultural Festival">
+                <div class="gallery-overlay">
+                    <a href="previous.html" class="gallery-link">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-more-container animate-on-scroll">
+            <a href="previous.html" class="btn btn-outline">View Full Gallery</a>
+        </div>
     </div>
 
+    <!-- Map Section -->
+    <div class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125436.78338945462!2d-0.8859224139006361!3d9.403219337721456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd43c777b7a7959%3A0x2b57d9334f2cced7!2sTamale!5e0!3m2!1sen!2sgh!4v1651661235018!5m2!1sen!2sgh" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Enhanced Footer -->
+    <footer id="contact-section">
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-decoration footer-circle1"></div>
+        <div class="footer-decoration footer-circle2"></div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Northern Ghana Cultural Dance</h3>
+                    <p>Preserving and promoting the rich cultural heritage of Northern Ghana through authentic dance experiences and cultural education.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="previous.html">Gallery</a></li>
+                        <li><a href="#booking-section">Book A Service</a></li>
+                        <li><a href="#contact-section">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info-footer">
+                        <i class="fas fa-phone"></i>
+                        <p>+233240080811</p>
+                    </div>
+                    <div class="contact-info-footer">
+                        <i class="fas fa-envelope"></i>
+                        <p>mjamaldeen91@gmail.com</p>
+                    </div>
+                    <div class="contact-info-footer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Tamale, Northern Region, Ghana</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on our events, workshops and cultural activities.</p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Northern Ghana Cultural Dance. All rights reserved.</p>
+                <p>Preserving heritage through rhythm and movement</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+            
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+            
+            // Header scroll effect
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+            
+            // Scroll animation
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
