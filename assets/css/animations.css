@@ -1,32 +1,35 @@
-/* Animations and effects for Northern Ghana Cultural Dance Website */
+/* Animations and transitions for Northern Ghana Cultural Dance Website */
 
 /* Fade In Animation */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in {
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
 }
 
 /* Slide In Animation */
-@keyframes slideInFromLeft {
-  from { transform: translateX(-50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .slide-in-left {
-  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
 }
 
-@keyframes slideInFromRight {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .slide-in-right {
-  animation: slideInFromRight 0.8s ease-out forwards;
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
 }
 
 @keyframes slideInFromBottom {
@@ -47,6 +50,21 @@
 
 .pulsate {
   animation: pulsate 2s ease-in-out infinite;
+}
+
+/* Pulse animation for emphasizing elements */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
 }
 
 /* Reveal Text Effect */
@@ -73,38 +91,60 @@
 
 /* Hover Effects */
 .hover-lift {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Staggered Animation Delays */
 .delay-1 {
-  animation-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 .delay-4 {
   animation-delay: 0.8s;
 }
 
+.stagger-animation > * {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-animation > *:nth-child(2) { animation-delay: 0.3s; }
+.stagger-animation > *:nth-child(3) { animation-delay: 0.5s; }
+.stagger-animation > *:nth-child(4) { animation-delay: 0.7s; }
+
 /* Scale Animation */
 @keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .scale-in {
-  animation: scaleIn 0.5s ease-out forwards;
+  animation: scaleIn 0.8s ease-out forwards;
+  transform: scale(0);
+  opacity: 0;
 }
 
 /* Glow Effect */
@@ -115,7 +155,11 @@
 }
 
 .glow-effect {
-  animation: glow 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
 }
 
 /* Rotating Animation */
@@ -144,13 +188,33 @@
 /* Scroll Animation Trigger Classes */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.animate {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.animate.active {
+  opacity: 1;
+}
+
+/* Float animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
 }
 
 /* Image Hover Effects */
@@ -166,10 +230,33 @@
   transform: scale(1.1);
 }
 
+/* Image zoom effect on hover */
+.zoom-on-hover {
+  overflow: hidden;
+}
+
+.zoom-on-hover img {
+  transition: transform 0.5s ease;
+}
+
+.zoom-on-hover:hover img {
+  transform: scale(1.1);
+}
+
+.zoom-in {
+  transition: transform 0.5s ease;
+}
+
+.zoom-in:hover {
+  transform: scale(1.05);
+}
+
 /* Button Animation */
 .btn-animated {
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .btn-animated:before {
@@ -179,17 +266,148 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transition: all 0.6s ease;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  transition: all 0.5s ease;
 }
 
 .btn-animated:hover:before {
-  left: 100%;
+  left: 0;
+}
+
+/* Ripple effect for buttons */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .2;
+  transition: 0s;
+}
+
+/* Shake animation for notifications or calls to action */
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-3px, 0, 0); }
+  40%, 60% { transform: translate3d(3px, 0, 0); }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Loading spinner animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade in up animation for items */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Menu toggle animation */
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  position: relative;
+  z-index: 200;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.menu-toggle.active span:first-child {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:last-child {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Responsive menu animation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 270px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    margin: 10px 0;
+  }
 }
 
 /* Shimmer effect */
@@ -206,4 +424,31 @@
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
+}
+
+/* Animation for testimonial cards */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Star rating animation */
+.star-rating i {
+  opacity: 0;
+  animation: starGlow 1.5s ease forwards;
+}
+
+.star-rating i:nth-child(1) { animation-delay: 0.1s; }
+.star-rating i:nth-child(2) { animation-delay: 0.2s; }
+.star-rating i:nth-child(3) { animation-delay: 0.3s; }
+.star-rating i:nth-child(4) { animation-delay: 0.4s; }
+.star-rating i:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes starGlow {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
 }
