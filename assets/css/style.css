@@ -102,11 +102,23 @@ header {
 }
 .name-content p{
     padding-left: 5rem;
-    
+
+}
+.sec{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+.sec img{
+    height: 450px;
+    max-width: 100%;
+    margin: 2rem;
 }
 .who-weare{
     margin-top: 6rem;
     padding: 2rem;
+    
 }
 .who-weare h2{
     text-align: left;
