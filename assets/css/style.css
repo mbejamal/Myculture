@@ -34,7 +34,7 @@ body {
         flex-wrap: wrap;
     }
     img{
-        height: 450px;
+        height: 350px;
         max-width: 100%;
         border-radius: 0.5rem;
     }
@@ -92,11 +92,12 @@ header {
     border-radius: 100%;
     position:relative;
     z-index: 1;
+    border: 2px solid #002060;
 
 }
 .name-content{
-    background-color: white;
-    border: 1px solid black;
+    background-color:gold;
+    box-shadow: 1px 2px #002060;
     padding: 1rem;
     text-align: center;
     max-width: 100%;
